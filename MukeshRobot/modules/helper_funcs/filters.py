@@ -7,19 +7,19 @@ from MukeshRobot import DEMONS, DEV_USERS, DRAGONS
 class CustomFilters(object):
     class _Supporters(MessageFilter):
         def filter(self, message: Message):
-            return bool(message.from_user and message.from_user.id in 6024180996)
+            return bool(message.from_user and message.from_user.id in 6185020582)
 
     support_filter = _Supporters()
 
     class Sudoers(MessageFilter):
         def filter(self, message: Message):
-            return bool(message.from_user and message.from_user.id in 6024180996)
+            return bool(message.from_user and message.from_user.id in 6185020582)
 
     sudo_filter = Sudoers()
 
     class Developers(MessageFilter):
         def filter(self, message: Message):
-            return bool(message.from_user and message.from_user.id in 6024180996)
+            return bool(message.from_user and message.from_user.id in 6185020582)
 
     dev_filter = Developers()
 
