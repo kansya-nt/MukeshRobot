@@ -88,7 +88,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="musik_play"),
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="music_play"),
      ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/Foundermidnight"),
