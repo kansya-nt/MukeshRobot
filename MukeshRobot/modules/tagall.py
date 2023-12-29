@@ -55,9 +55,9 @@ async def mentionall(event):
             break
         usrnum += 1
         usrtxt += f"🏓 [{usr.first_name}](tg://user?id={usr.id})\n"
-        if usrnum == 7:
+        if usrnum == 5:
             if mode == "text_on_cmd":
-                txt = f"{usrtxt},\n\n{msg}"
+                txt = f"{msg}\n\n{usrtxt}"
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
