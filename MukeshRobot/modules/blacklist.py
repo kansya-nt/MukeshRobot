@@ -73,7 +73,7 @@ def add_blacklist(update, context):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-    words = msg.text.split(None, 1)
+    reply_msg = msg.reply_to_message  # Ambil pesan yang di-reply
 
     conn = connected(context.bot, update, chat, user.id)
     if conn:
@@ -86,36 +86,41 @@ def add_blacklist(update, context):
         else:
             chat_name = chat.title
 
-    if len(words) > 1:
-        text = words[1]
-        to_blacklist = list(
-            {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
-        )
-        for trigger in to_blacklist:
-            sql.add_to_blacklist(chat_id, trigger.lower())
-
-        if len(to_blacklist) == 1:
-            send_message(
-                update.effective_message,
-                "ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ʙʟᴀᴄᴋʟɪsᴛ <code>{}</code> ᴅɪ ɢʀᴏᴜᴘs: <b>{}</b>!".format(
-                    html.escape(to_blacklist[0]), html.escape(chat_name)
-                ),
-                parse_mode=ParseMode.HTML,
-            )
-
+    if reply_msg:  # Jika ada pesan yang di-reply
+        text = reply_msg.text
+    else:
+        words = msg.text.split(None, 1)
+        if len(words) > 1:
+            text = words[1]
         else:
             send_message(
                 update.effective_message,
-                "ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ʙʟᴀᴄᴋʟɪsᴛ: <code>{}</code> in <b>{}</b>!".format(
-                    len(to_blacklist), html.escape(chat_name)
-                ),
-                parse_mode=ParseMode.HTML,
+                "Tell me which words you would like to add in blacklist.",
             )
+            return
 
+    to_blacklist = list(
+        {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
+    )
+    
+    for trigger in to_blacklist:
+        sql.add_to_blacklist(chat_id, trigger.lower())
+
+    if len(to_blacklist) == 1:
+        send_message(
+            update.effective_message,
+            "Added blacklist <code>{}</code> in chat: <b>{}</b>!".format(
+                html.escape(to_blacklist[0]), html.escape(chat_name)
+            ),
+            parse_mode=ParseMode.HTML,
+        )
     else:
         send_message(
             update.effective_message,
-            "ᴋᴀsɪʜ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɴʏᴀ ᴅᴏɴɢ ᴋᴇɴᴛᴏᴅ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ.",
+            "Added blacklist trigger: <code>{}</code> in <b>{}</b>!".format(
+                len(to_blacklist), html.escape(chat_name)
+            ),
+            parse_mode=ParseMode.HTML,
         )
 
 
