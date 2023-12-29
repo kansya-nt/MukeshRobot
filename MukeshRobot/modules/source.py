@@ -9,7 +9,7 @@ from telethon import __version__ as s
 from MukeshRobot import OWNER_ID, dispatcher
 from MukeshRobot import pbot as client
 
-ꝛʌʏʌ = "https://graph.org/file/0a846c1065661586a8c4b.jpg"
+ɴᴛ = "https://graph.org/file/2a50d39af8daec3d36d70.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
@@ -18,7 +18,7 @@ async def repo(client, message):
         photo=Mukesh,
         caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [ᴅᴇᴠᴇʟᴏᴘᴇʀ](tg://user?id=6185020582)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [ᴅᴇᴠᴇʟᴏᴘᴇʀ](tg://user?id=6024180996)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
@@ -30,11 +30,11 @@ async def repo(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴏᴡɴᴇʀ ",user_id=6185020582
+                        "• ᴏᴡɴᴇʀ ",user_id=6024180996
                     ),
                     InlineKeyboardButton(
                         "• ʀᴇᴘᴏ •",
-                        url="https://t.me/palngentod",
+                        url="https://t.me/foundermidnight",
                     ),
                 ]
             ]
