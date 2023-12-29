@@ -14,7 +14,7 @@ async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
         return await event.respond(
-            "__𝗺𝗼𝗱𝘂𝗹𝗲 𝗶𝗻𝗶 𝗰𝘂𝗺𝗮𝗻 𝗯𝗶𝘀𝗮 𝗱𝗶𝗽𝗮𝗸𝗲 𝗱𝗶 𝗴𝗰 𝗮𝘁𝗮𝘂 𝗰𝗵 𝗺𝗲𝗸!__"
+            "ᴍᴏᴅᴜʟᴇ ɪɴɪ ᴄᴜᴍᴀɴ ʙɪꜱᴀ ᴅɪ ᴘᴀᴋᴇ ᴅɪ ɢᴄ ᴀᴛᴀᴜ ᴅɪ ᴄʜ ᴍᴇᴋ!"
         )
 
     is_admin = False
@@ -44,7 +44,7 @@ async def mentionall(event):
             )
     else:
         return await event.respond(
-            "__𝗿𝗲𝗽𝗹𝘆 𝗽𝗲𝘀𝗮𝗻 𝗺𝗮𝗻𝗮 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶 𝘁𝗮𝗴 𝗮𝗹𝗹 𝗺𝗲𝗸 𝗯𝘂𝗿𝘂𝗮𝗻!__"
+            "ʀᴇᴘʟʏ ᴘᴇꜱᴀɴ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ᴛᴀɢᴀʟʟ ᴍᴇᴋ!"
         )
 
     spam_chats.append(chat_id)
@@ -54,7 +54,7 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"🏓 [{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"🏓 [{usr.first_name}](tg://user?id={usr.id})\n"
         if usrnum == 7:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt},\n\n{msg}"
