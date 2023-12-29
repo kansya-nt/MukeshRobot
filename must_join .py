@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from RitoRobot import MUST_JOIN,START_IMG
+from MukeshRobot import MUST_JOIN,START_IMG
 
 
 @pbot.on_message( filters.incoming & filters.private, group=-1)
@@ -23,7 +23,7 @@ async def must_join_channel(bot: Client, msg: Message):
                     f"Join Dulu Kampang Baru Pencet /start Lagi !!",
                 
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("Masuk sini nyet, Jangan Lupa Salam", url=link)]
+                        [InlineKeyboardButton("Masuk sini nyet, Jangan Lupa Salam", url=f"https://t.me/Asupanhot_viral)]
                     ])
                 )
                 await msg.stop_propagation()
