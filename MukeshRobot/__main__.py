@@ -215,8 +215,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.4)
             lol.edit_text("⚡")
             time.sleep(0.3)
-            lol.edit_text("ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ")
-            time.sleep(0.3)
+            lol.edit_text("ᴡ") time.sleep(0.3), lol.edit_text("ᴇ") time.sleep(0.3), lol.edit_text("ʟ") time.sleep(0.3), lol.edit_text("ᴄ") time.sleep(0.3), lol.edit_text("ᴏ") time.sleep(0.3), lol.edit_text("ᴍ") time.sleep(0.3), lol.edit_text("ᴇ") time.sleep(0.3),
             lol.delete()
             
             update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
