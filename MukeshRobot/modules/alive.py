@@ -10,21 +10,21 @@ from telethon import __version__ as tver
 from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
 
 PHOTO = [
-    "https://graph.org/file/0a846c1065661586a8c4b.jpg",
-    "https://graph.org/file/0a846c1065661586a8c4b.jpg",
-    "https://graph.org/file/0a846c1065661586a8c4b.jpg",
-    "https://graph.org/file/0a846c1065661586a8c4b.jpg",
-    "https://graph.org/file/0a846c1065661586a8c4b.jpg",
+    "https://graph.org/file/2a50d39af8daec3d36d70.jpg",
+    "https://graph.org/file/2a50d39af8daec3d36d70.jpg",
+    "https://graph.org/file/2a50d39af8daec3d36d70.jpg",
+    "https://graph.org/file/2a50d39af8daec3d36d70.jpg",
+    "https://graph.org/file/2a50d39af8daec3d36d70.jpg",
 ]
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=6185020582),
-        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"http://t.me/onlyesaw"),
+        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=6024180996),
+        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"http://t.me/Asupanhot_viral"),
     ],
     [
-        InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", url="http://t.me/+WzzEQPWmXfIxZWE1"),
-        InlineKeyboardButton(text="๏ ᴀsᴜᴘᴀɴ ๏", url=f"http://t.me/onlyesaw"),
+        InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", url="https://t.me/+50pybD6yWmE5Y2Fl"),
+        InlineKeyboardButton(text="๏ ᴀsᴜᴘᴀɴ ๏", url=f"http://t.me/Asupanhot_viral"),
     ],
     [                         
         InlineKeyboardButton(
@@ -56,11 +56,11 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.2)
     await m.reply_photo(
         START_IMG,
-        caption=f"""**𝗵𝗮𝘆, 𝗴𝘄 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
+        caption=f"""**ʜʏ ᴍᴇᴋ ,ɢᴡ  『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  ๏ ** ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ᴘᴀʟ](tg://user?id=6185020582)
+  ๏ ** ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ɴᴛ](tg://user?id=6024180996)
   
-  ๏ ** ғᴏᴜɴᴅᴇʀ :** [ɴɪɢʜᴛ ᴡᴏʀʟᴅ](http://t.me/+WzzEQPWmXfIxZWE1)
+  ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+50pybD6yWmE5Y2Fl)
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
