@@ -95,7 +95,7 @@ def add_blacklist(update, context):
         else:
             send_message(
                 update.effective_message,
-                "Tell me which words you would like to add in blacklist.",
+                "ᴋᴀsɪʜ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɴʏᴀ ᴅᴏɴɢ ᴋᴇɴᴛᴏᴅ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ.",
             )
             return
 
@@ -109,7 +109,7 @@ def add_blacklist(update, context):
     if len(to_blacklist) == 1:
         send_message(
             update.effective_message,
-            "Added blacklist <code>{}</code> in chat: <b>{}</b>!".format(
+            "ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ʙʟᴀᴄᴋʟɪsᴛ <code>{}</code> ᴅɪ ɢʀᴏᴜᴘs: <b>{}</b>!".format(
                 html.escape(to_blacklist[0]), html.escape(chat_name)
             ),
             parse_mode=ParseMode.HTML,
@@ -117,7 +117,7 @@ def add_blacklist(update, context):
     else:
         send_message(
             update.effective_message,
-            "Added blacklist trigger: <code>{}</code> in <b>{}</b>!".format(
+            "ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ʙʟᴀᴄᴋʟɪsᴛ: <code>{}</code> in <b>{}</b>!".format(
                 len(to_blacklist), html.escape(chat_name)
             ),
             parse_mode=ParseMode.HTML,
