@@ -804,18 +804,18 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_photo(START_IMG,"» 𝗹𝘂 𝗺𝗮𝘂 𝗯𝘂𝗸𝗮 𝘀𝗲𝘁𝘁𝗶𝗻𝗴 𝗺𝗲𝗻𝘂 𝗱𝗶mana  𝗺𝗲𝗸?.",
+        update.effective_message.reply_photo(START_IMG,"» ʟᴜ ᴍᴀᴜ ʙᴜᴋᴀ ᴍᴇɴᴜ sᴇᴛᴛɪɴɢ ᴅɪᴍᴀɴᴀ ᴍᴇᴋ?.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text=" 𝗮𝗽𝗮 𝗯𝘂𝗸𝗮 𝗱𝗶𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗰𝗵𝗮𝘁",
+                            text=" ʙᴜᴋᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
                             url="https://t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text=" 𝗯𝘂𝗸𝗮 𝗱𝗶𝘀𝗶𝗻𝗶",
+                            text=" ʙᴜᴋᴀ ᴅɪsɪɴɪ",
                             callback_data="help_back",
                         )
                     ],
@@ -1064,12 +1064,12 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_photo(
-                f"@berlinmusic_support",
-                photo=f"https://graph.org/file/0a846c1065661586a8c4b.jpg",
+                f"@Asupanhot_viral",
+                photo=f"https://graph.org/file/2a50d39af8daec3d36d70.jpg",
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ꝛʌʏʌ**
+**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ɴᴛ**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
