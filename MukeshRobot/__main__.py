@@ -88,7 +88,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="music_play"),
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Music_play"),
      ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/Foundermidnight"),
@@ -646,7 +646,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
         InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id=5872109995"),
+        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id=6024180996"),
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],
                     [
