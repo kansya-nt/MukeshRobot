@@ -1070,14 +1070,14 @@ def main():
                             text="➕ᴛᴀᴍʙᴀʜ ᴋᴇ ɢᴄ ᴀᴍᴘᴀs ʟᴜ➕",
                             url="https://t.me/groupcontrollertgbot?startgroup=true"
                             )
-                       ]
+                     ]
                 ]
                      )
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_photo(
-                f"@Asupanhot_viral",
-                photo=f"https://graph.org/file/2a50d39af8daec3d36d70.jpg",
+                f"@Berlinmusic_support",
+                photo=f"https://graph.org/file/7944523475199d2093dd7.mp4",
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
