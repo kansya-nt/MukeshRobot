@@ -19,8 +19,8 @@ PHOTO = [
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=6024180996),
-        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"http://t.me/Asupanhot_viral"),
+        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=1499130346),
+        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"http://t.me/Berlinmusic_support"),
     ],
     [
         InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", url="https://t.me/+50pybD6yWmE5Y2Fl"),
@@ -56,9 +56,9 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.2)
     await m.reply_photo(
         START_IMG,
-        caption=f"""**ʜʏ ᴍᴇᴋ ,ɢᴡ  『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
+        caption=f"""**ʜʏ ᴍᴇᴋ ,ɢᴡ『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  ๏ ** ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ɴᴛ](tg://user?id=6024180996)
+  ๏ ** ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ɴᴛ](tg://user?id=1499130346)
   
   ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+50pybD6yWmE5Y2Fl)
    ━━━━━━━━━━━━━━━━━━━""",
