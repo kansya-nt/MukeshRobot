@@ -1,4 +1,4 @@
-import importlib
+uimport importlib
 import re
 import time
 import asyncio
@@ -1016,7 +1016,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5935608297:
+        if OWNER_ID != 1499130346:
             update.effective_message.reply_text(
                 f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com)"
                 f"\n\nʟᴜ ʙɪsᴀ ʟᴀɴɢsᴜɴɢ ᴘᴄ ᴋᴇ ɢᴡ ʏᴀ ᴋᴀʟᴏ ᴍᴀᴜ ᴅᴏɴᴀᴛᴇ ᴜᴀɴʜ ʟᴇʙɪʜ ʟᴜ ᴡᴋᴡᴋ : [ʙᴇʀʟɪɴ](https://t.me/Berlinmidnight)",
@@ -1085,7 +1085,7 @@ def main():
 ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+50pybD6yWmE5Y2Fl)
 ๏ ** ꜱᴜᴘᴘᴏʀᴛ :** [ᴄʜᴀɴɴᴇʟ](https://t.me/Areamidnight)
 ━━━━━━━━━━━━━
-""",reply_markup=InlineKeyboardMarkup(Mukesh),
+""",reply_markup=InlineKeyboardMarkup
             )
         except Unauthorized:
             LOGGER.warning(
