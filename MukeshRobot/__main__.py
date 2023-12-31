@@ -1085,8 +1085,7 @@ def main():
 ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+50pybD6yWmE5Y2Fl)
 ๏ ** ꜱᴜᴘᴘᴏʀᴛ :** [ᴄʜᴀɴɴᴇʟ](https://t.me/Areamidnight)
 ━━━━━━━━━━━━━
-""",reply_markup=x,
-                parse_mode=ParseMode.MARKDOWN,
+""",reply_markup=InlineKeyboardMarkup(Mukesh),
             )
         except Unauthorized:
             LOGGER.warning(
