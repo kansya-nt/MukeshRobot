@@ -22,12 +22,12 @@
     "API_ID": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": ""
+       "value": "20609170"
     },
     "API_HASH": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": ""
+       "value": "cd0fa6d4f7c452ec5617bb0b1e4dc479"
     },
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -45,12 +45,12 @@
     "EVENT_LOGS": {
        "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
        "required": true,
-       "value": ""
+       "value": "-1002059482245"
     },
     "MONGO_DB_URI": {
        "description": "Required for database connections.",
        "required": true,
-       "value": ""
+       "value": "mongodb+srv://kansya:1234@cluster0.pz6wrfk.mongodb.net/?retryWrites=true&w=majority"
     },
     "CASH_API_KEY": {
         " description": " Get your API key from https://www.alphavantage.co/support/#api-key",
@@ -81,7 +81,7 @@
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
        "required": true,
-       "value": ""
+       "value": "6884805679:AAEGquSzbfBkTLknKgJVZ_QtSmhVfj4A42g"
     }
  }
 }
