@@ -7,11 +7,11 @@ from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 from MukeshRobot.modules.helper_funcs.msg_types import Types
 from MukeshRobot.modules.sql import BASE, SESSION
 
-DEFAULT_WELCOME = "Hey {first}, how are you?"
-DEFAULT_GOODBYE = "Nice knowing ya!"
+DEFAULT_WELCOME = "ᴇʜ ᴋᴏɴᴛᴏʟ ᴡᴇʟᴄᴏᴍᴇ ᴅɪᴍᴀʀɪ ᴊᴀɴɢᴀɴ ᴋᴇᴋ ᴏʀᴀɴɢ ᴛᴏʟᴏʟ ᴀᴛᴀᴜ ʙᴀʏɪ ᴋᴇᴋ ʙᴀʀᴜ ʟᴀʜɪʀ ʟᴜ, ꜱᴏᴋᴀᴘɪɴ ᴀᴊᴀ ᴍᴇᴋ ᴏᴋᴇʏ."
+DEFAULT_GOODBYE = "ᴛɪᴀᴛɪ ᴍᴇᴋ, ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ, ʙᴇʀᴀᴋ ᴅᴜʟᴜ ꜱᴇʙᴇʟᴜᴍ ᴀᴋᴛɪᴠɪᴛᴀꜱ"
 
 DEFAULT_WELCOME_MESSAGES = [
-    "ᴇʜ ᴋᴏɴᴛᴏʟ ᴡᴇʟᴄᴏᴍᴇ ᴛᴇ ᴅɪᴍᴀʀɪ ᴊᴀɴɢᴀɴ ᴋᴇᴋ ᴏʀᴀɴɢ ᴛᴏʟᴏʟ ᴀᴛᴀᴜ ʙᴀʏɪ ᴋᴇᴋ ʙᴀʀᴜ ʟᴀʜɪʀ ʟᴜ, ꜱᴏᴋᴀᴘɪɴ ᴀᴊᴀ ᴍᴇᴋ ᴏᴋᴇʏ.",
+    "ᴇʜ ᴋᴏɴᴛᴏʟ ᴡᴇʟᴄᴏᴍᴇ ᴅɪᴍᴀʀɪ ᴊᴀɴɢᴀɴ ᴋᴇᴋ ᴏʀᴀɴɢ ᴛᴏʟᴏʟ ᴀᴛᴀᴜ ʙᴀʏɪ ᴋᴇᴋ ʙᴀʀᴜ ʟᴀʜɪʀ ʟᴜ, ꜱᴏᴋᴀᴘɪɴ ᴀᴊᴀ ᴍᴇᴋ ᴏᴋᴇʏ.",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "ᴛɪᴀᴛɪ ᴍᴇᴋ, ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ, ʙᴇʀᴀᴋ ᴅᴜʟᴜ ꜱᴇʙᴇʟᴜᴍ ᴀᴋᴛɪᴠɪᴛᴀꜱ",
