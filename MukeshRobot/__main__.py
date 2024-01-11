@@ -88,10 +88,11 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Music_play"),
+        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇᴍᴇɴᴛn", callback_data="Music_play"),
      ],
     [
-        InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/Foundermidnight"),
+        InlineKeyboardButton(text="ᴅᴇᴠ", url=f"https://t.me/Foundermidnight"),
+        InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ", url=f"https://t.me/Foundermidnight"),
     ],     
     [
         InlineKeyboardButton(
@@ -1016,7 +1017,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1499130346:
+        if OWNER_ID != 6024180996:
             update.effective_message.reply_text(
                 f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com)"
                 f"\n\nʟᴜ ʙɪsᴀ ʟᴀɴɢsᴜɴɢ ᴘᴄ ᴋᴇ ɢᴡ ʏᴀ ᴋᴀʟᴏ ᴍᴀᴜ ᴅᴏɴᴀᴛᴇ ᴜᴀɴʜ ʟᴇʙɪʜ ʟᴜ ᴡᴋᴡᴋ : [ʙᴇʀʟɪɴ](https://t.me/Foundermidnight)",
