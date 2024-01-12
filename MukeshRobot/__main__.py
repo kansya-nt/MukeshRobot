@@ -87,15 +87,14 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", url=f"https://t.me/berlingenstringbot"),
+        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ", url=f"https://t.me/Berlingenstringbot"),
     ],
     [
         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇᴍᴇɴᴛn", callback_data="Music_play"),
-    ],
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Music_play"),
+     ],
     [
-        InlineKeyboardButton(text="ᴅᴇᴠ", url=f"https://t.me/Foundermidnight"),
-        InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ", url=f"https://link.dana.id/qr/2gmos5bu"),
+        InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/Dukeassit"),
     ],     
     [
         InlineKeyboardButton(
@@ -469,23 +468,20 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             
             reply_markup=InlineKeyboardMarkup(
                 [
-                  [
-                       InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", url=f"https://t.me/berlingenstringbot"),
-                  ],
-                  [
-                       InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-                       InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇᴍᴇɴᴛn", callback_data="Music_play"),
-                  ],
-                  [
-                       InlineKeyboardButton(text="ᴅᴇᴠ", url=f"https://t.me/Foundermidnight"),
-                       InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ", url=f"https://link.dana.id/qr/2gmos5bu"),
-                  ],     
-                  [
-                       InlineKeyboardButton(
-                           text="ᴛᴀᴍʙᴀʜ ᴋᴇ ɢᴄ ᴀᴍᴘᴀs ʟᴜ",
-                           url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
-                  ),
-               ],
+                    [
+                        InlineKeyboardButton(text="⍟ Mᴀɴᴀɢᴇᴍᴇɴᴛ ⍟", callback_data="help_back"),
+                        InlineKeyboardButton(text="⍟ Mᴜsɪᴄ ⍟", callback_data="Music_")
+                    ],
+                    [
+                        InlineKeyboardButton(text="⍟ Bᴀsɪᴄ ⍟", callback_data="basic_help"),
+                        InlineKeyboardButton(text="⍟ Exᴘᴇʀᴛ ⍟", callback_data="expert_help")
+                    ],
+                    [
+                        InlineKeyboardButton(text="⍟ Aᴅᴠᴀɴᴄᴇ ⍟", callback_data="advance_help"),
+                        InlineKeyboardButton(text="⍟ Dᴏɴᴀᴛɪᴏɴ ⍟", callback_data="donation_help") 
+                    ],
+                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
+                ]
             ),
         )
     elif query.data=="basic_help":
